@@ -56,9 +56,10 @@ Database 功能為：將資料庫內容還原
 - 簡述： DbUp 是一個開源的 .NET 工具，專門用來執行版本控制的資料庫遷移 (Database Migrations)
 - 主要功能：利用 SchemaVersions 表格，記錄哪些 SQL 已執行過，避免重複執行
 - 進階功能： 加入 Transaction (確保更新失敗時回滾) `.WithTransaction()`
-- 補充：Migration 專案裡面的 SQLScripts資料夾包括 
+- 補充：Migration 專案裡面的 SQLScripts資料夾包括：
   1. 過去執行過的 sql 檔 
   2. 當開發者要修改資料表時，對應的 sql 檔
+  
 ![Initialize Image](https://github.com/Annie033088/Healthope-DB/blob/main/img/SQLScripts.png)
 
 ### 將資料插入 SchemaVersions 的表 ###
