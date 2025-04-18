@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [FengMu9966]
+    WITH PASSWORD = N'ifmil#hhva;teITfzbctBtu{msFT7_&#$!~<Xx{p|hpblcts', SID = 0xE4115620381F0E46B2C722B0E8D5D85A, DEFAULT_LANGUAGE = [繁體中文];
+
