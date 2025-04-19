@@ -69,5 +69,6 @@
     <Build Include="Security\FengMu9966_1.sql" />
     <Build Include="dbo\Tables\SchemaVersions.sql" />
     <Build Include="dbo\Tables\t_member.sql" />
+    <Build Include="dbo\Tables\t_memberAccessRecord.sql" />
   </ItemGroup>
 </Project>
