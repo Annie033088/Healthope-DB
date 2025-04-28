@@ -27,6 +27,7 @@ Database 功能為：將資料庫內容還原
 ## 從 Database 專案建構 SQL 資料庫 ##
 
 1. 打開 Database 專案，右鍵 Database 專案，點擊發行，按照發行流程將 SQL Server 的資料庫建立完畢
+2. 資料庫這裡命名為 Healthope
 ![Initialize Image](https://github.com/Annie033088/Healthope-DB/blob/main/img/發行到資料庫.png)
 
 ## 從專案 Migration 至 DB 流程 ##
@@ -57,9 +58,9 @@ Database 功能為：將資料庫內容還原
 - 主要功能：利用 SchemaVersions 表格，記錄哪些 SQL 已執行過，避免重複執行
 - 進階功能： 加入 Transaction (確保更新失敗時回滾) `.WithTransaction()`
 - 補充：Migration 專案裡面的 SQLScripts資料夾包括：
-  1. 過去執行過的 sql 檔 
+  1. 過去執行過的 sql 檔
   2. 當開發者要修改資料表時，對應的 sql 檔
-  
+
 ![Initialize Image](https://github.com/Annie033088/Healthope-DB/blob/main/img/SQLScripts.png)
 
 ### 將資料插入 SchemaVersions 的表 ###

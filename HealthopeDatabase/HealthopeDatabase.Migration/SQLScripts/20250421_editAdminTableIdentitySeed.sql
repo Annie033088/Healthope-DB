@@ -1,0 +1,1 @@
+﻿DBCC CHECKIDENT ('t_admin', RESEED, 1);

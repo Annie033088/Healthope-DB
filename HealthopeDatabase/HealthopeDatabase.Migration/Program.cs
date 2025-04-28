@@ -7,7 +7,7 @@ class Program
     static void Main(string[] args)
     {
         //資料庫連接字串
-        string connectionString = @"Data Source=LAPTOP-43CNJ97A\SQLEXPRESS;Integrated Security=True;Initial Catalog=Test;Persist Security Info=True;MultipleActiveResultSets=True;TrustServerCertificate=True";
+        string connectionString = @"Data Source=LAPTOP-43CNJ97A\SQLEXPRESS;Integrated Security=True;Initial Catalog=Healthope;Persist Security Info=True;MultipleActiveResultSets=True;TrustServerCertificate=True";
         // 這是儲存 SQL 檔案的資料夾
         string scriptsFolder = @"..\..\..\SQLScripts";
 
