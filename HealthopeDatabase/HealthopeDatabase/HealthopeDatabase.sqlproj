@@ -73,5 +73,6 @@
     <Build Include="dbo\Tables\t_memberAccessRecord.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_getLoggingInAdmin.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_addAdmin.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getAdmin.sql" />
   </ItemGroup>
 </Project>
