@@ -9,3 +9,8 @@
     UNIQUE NONCLUSTERED ([f_account] ASC)
 );
 
+
+GO
+CREATE NONCLUSTERED INDEX [IX_admin_adminId]
+    ON [dbo].[t_admin]([f_adminId] ASC);
+
