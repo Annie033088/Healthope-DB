@@ -63,6 +63,7 @@
     <Folder Include="dbo\Tables\" />
     <Folder Include="Security\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\Functions\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\t_admin.sql" />
@@ -75,5 +76,9 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_addAdmin.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_getAdmin.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_getAdminById.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editAdmin.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_delAdmin.sql" />
+    <Build Include="dbo\Functions\fun_pwdHash.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editSelfPwd.sql" />
   </ItemGroup>
 </Project>
