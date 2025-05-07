@@ -80,5 +80,8 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_delAdmin.sql" />
     <Build Include="dbo\Functions\fun_pwdHash.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_editSelfPwd.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getPhoneAtVerifyPhone.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editPhoneVerified.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_addMember.sql" />
   </ItemGroup>
 </Project>
