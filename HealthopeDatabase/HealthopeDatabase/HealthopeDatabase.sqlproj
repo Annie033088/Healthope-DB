@@ -83,5 +83,7 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_getPhoneAtVerifyPhone.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_editPhoneVerified.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_addMember.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getMemberEditDataById.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getMember.sql" />
   </ItemGroup>
 </Project>
