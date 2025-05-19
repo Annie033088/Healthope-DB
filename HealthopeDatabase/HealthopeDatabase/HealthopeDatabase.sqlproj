@@ -90,5 +90,7 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_getMemberDetail.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_addCoach.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_getCoach.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getCoachEditDataById.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editCoach.sql" />
   </ItemGroup>
 </Project>
