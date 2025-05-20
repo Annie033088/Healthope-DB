@@ -92,5 +92,7 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_getCoach.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_getCoachEditDataById.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_editCoach.sql" />
+    <Build Include="dbo\Tables\t_groupClassShowcase.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_addGroupClassShowcase.sql" />
   </ItemGroup>
 </Project>
