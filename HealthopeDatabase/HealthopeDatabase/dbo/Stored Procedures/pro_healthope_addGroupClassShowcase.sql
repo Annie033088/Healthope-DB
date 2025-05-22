@@ -1,8 +1,7 @@
-﻿CREATE PROCEDURE pro_healthope_addGroupClassShowcase
+﻿CREATE PROCEDURE [dbo].[pro_healthope_addGroupClassShowcase]
 	@name NVARCHAR(20), 
 	@summary NVARCHAR(80),
 	@detailContent NVARCHAR(500),
-	@certification NVARCHAR(200), 
 	@imageUrl NVARCHAR(100),
 	@category INT,
 	@icon INT,

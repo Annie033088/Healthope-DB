@@ -94,5 +94,10 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_editCoach.sql" />
     <Build Include="dbo\Tables\t_groupClassShowcase.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_addGroupClassShowcase.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getGroupClassShowcaseEditDataById.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getGroupClassShowcaseDetail.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getGroupClassShowcase.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editGroupClassShowcase.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_delGroupClassShowcase.sql" />
   </ItemGroup>
 </Project>
