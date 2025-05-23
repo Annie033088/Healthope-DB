@@ -7,7 +7,7 @@
     [f_category]             INT            NOT NULL,
     [f_icon]                 INT            NOT NULL,
     [f_sort]                 INT            NOT NULL,
-    [f_updateTime]           DATETIME       DEFAULT (getdate()) NOT NULL,
+    [f_updateTime]           DATETIME2 (3)  CONSTRAINT [DF_t_groupClassShowcase_f_updateTime] DEFAULT (sysutcdatetime()) NOT NULL,
     PRIMARY KEY CLUSTERED ([f_groupClassShowcaseId] ASC)
 );
 

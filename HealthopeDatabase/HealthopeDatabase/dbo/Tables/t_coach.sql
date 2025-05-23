@@ -13,8 +13,8 @@
     [f_type]              TINYINT        NOT NULL,
     [f_contractStartTime] DATE           DEFAULT ('0001-01-01') NOT NULL,
     [f_contractEndTime]   DATE           DEFAULT ('0001-01-01') NOT NULL,
-    [f_createTime]        DATETIME       DEFAULT (getdate()) NOT NULL,
-    [f_updateTime]        DATETIME       DEFAULT (getdate()) NOT NULL,
+    [f_createTime]        DATETIME2 (3)  CONSTRAINT [DF_t_coach_f_createTime] DEFAULT (sysutcdatetime()) NOT NULL,
+    [f_updateTime]        DATETIME2 (3)  CONSTRAINT [DF_t_coach_f_updateTime] DEFAULT (sysutcdatetime()) NOT NULL,
     PRIMARY KEY CLUSTERED ([f_coachId] ASC)
 );
 

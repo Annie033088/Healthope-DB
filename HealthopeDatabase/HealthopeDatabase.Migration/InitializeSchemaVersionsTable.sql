@@ -1,5 +1,5 @@
 -- DbUp SchemaVersions Backup
--- Generated on: 2025/5/20 下午 05:01:58
+-- Generated on: 2025/5/23 下午 05:34:19
 
 INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250418_editAdminTable.sql', '2025-04-18 15:52:21');
 INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250418_addMemberTable.sql', '2025-04-18 17:13:31');
@@ -14,3 +14,13 @@ INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250506_editMemberTal
 INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250513_editMemberTable.sql', '2025-05-13 10:30:16');
 INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250514_addCoachTable.sql', '2025-05-14 15:38:36');
 INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250520_addGroupClassShowcaseTable.sql', '2025-05-20 17:01:58');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250523_editAdminTableDatetimeColumn.sql', '2025-05-23 17:08:31');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250523_editCoachTableDatetimeColumn.sql', '2025-05-23 17:08:31');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250523_editGroupClassShowcaseTableDatetimeColumn.sql', '2025-05-23 17:11:55');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250523_editMemberAccessRecordTableDatetimeColumn.sql', '2025-05-23 17:17:58');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250523_editMemberTableDatetimeColumn.sql', '2025-05-23 17:17:58');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250523_editAdminColumn.sql', '2025-05-23 17:34:18');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250523_editCoachColumn.sql', '2025-05-23 17:34:19');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250523_editGroupClassShowcaseColumn.sql', '2025-05-23 17:34:19');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250523_editMemberAccessRecordColumn.sql', '2025-05-23 17:34:19');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250523_editMemberColumn.sql', '2025-05-23 17:34:19');
