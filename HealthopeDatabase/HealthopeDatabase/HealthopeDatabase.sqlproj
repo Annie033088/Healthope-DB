@@ -100,5 +100,8 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_getGroupClassShowcase.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_editGroupClassShowcase.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_delGroupClassShowcase.sql" />
+    <Build Include="dbo\Tables\t_groupClassSchedule.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getShowcaseAndCoach.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_addSchedule.sql" />
   </ItemGroup>
 </Project>
