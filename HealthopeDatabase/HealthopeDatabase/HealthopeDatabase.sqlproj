@@ -102,6 +102,13 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_delGroupClassShowcase.sql" />
     <Build Include="dbo\Tables\t_groupClassSchedule.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_getShowcaseAndCoach.sql" />
-    <Build Include="dbo\Stored Procedures\pro_healthope_addSchedule.sql" />
+    <Build Include="dbo\Tables\t_tickctPlan.sql" />
+    <Build Include="dbo\Tables\t_personalTrainingPackage.sql" />
+    <Build Include="dbo\Tables\t_membershipPlan.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getGroupClassSchedule.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_addGroupClassSchedule.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_addTicketPlan.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_addPersonalTrainingPackage.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_addMembershipPlan.sql" />
   </ItemGroup>
 </Project>

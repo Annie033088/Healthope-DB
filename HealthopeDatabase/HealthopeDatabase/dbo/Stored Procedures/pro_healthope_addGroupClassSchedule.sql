@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE pro_healthope_addSchedule
+﻿CREATE PROCEDURE [pro_healthope_addGroupClassSchedule]
 	@className NVARCHAR(20), 
 	@category INT,
 	@icon INT,
@@ -23,9 +23,9 @@ BEGIN
 	DECLARE @status INT
 	SET @status =
 		CASE
-			WHEN @time BETWEEN GETUTCDATE() AND DATEADD(DAY, 7, GETUTCDATE()) THEN 2
-			WHEN @time > DATEADD(DAY, 7, GETUTCDATE()) THEN 1
-			ELSE 0  -- 錯誤的時間
+		    WHEN CONVERT(date, @time) BETWEEN CONVERT(date, GETUTCDATE()) AND CONVERT(date, DATEADD(DAY, 7, GETUTCDATE())) THEN 2
+		    WHEN CONVERT(date, @time) > CONVERT(date, DATEADD(DAY, 7, GETUTCDATE())) THEN 1
+		    ELSE 0
 		END;
 	
 	IF  @coachUpdateTime != @coachNewUpdateTime
@@ -38,12 +38,12 @@ BEGIN
 		SET @errorCode = @invalidFormatOrEntry
 		RETURN
 	END
-	ELSE IF EXISTS (SELECT 1 FROM t_groupClassSchedule WHERE f_time = @time AND f_place = @place) -- 時間及地點不可同時一樣
+	ELSE IF EXISTS (SELECT 1 FROM t_groupClassSchedule WITH(NOLOCK) WHERE f_time = @time AND f_place = @place) -- 時間及地點不可同時一樣
 	BEGIN
 		SET @errorCode = @duplicatePlaceAndTime
 		RETURN
 	END
-	ELSE IF EXISTS (SELECT 1 FROM t_groupClassSchedule WHERE f_time = @time AND f_coachId = @coachId) -- 時間及教練不可同時一樣
+	ELSE IF EXISTS (SELECT 1 FROM t_groupClassSchedule WITH(NOLOCK) WHERE f_time = @time AND f_coachId = @coachId) -- 時間及教練不可同時一樣
 	BEGIN
 		SET @errorCode = @duplicateCoachAndTime
 		RETURN
