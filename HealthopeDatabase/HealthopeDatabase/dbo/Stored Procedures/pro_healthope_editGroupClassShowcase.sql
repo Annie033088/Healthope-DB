@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE pro_healthope_editGroupClassShowcase
+﻿CREATE PROCEDURE [dbo].[pro_healthope_editGroupClassShowcase]
 	@groupClassShowcaseId INT,
 	@name NVARCHAR(20),
 	@summary NVARCHAR(80),
@@ -7,7 +7,7 @@
 	@category INT,
 	@icon INT,
 	@sort INT,
-	@updateTime DATETIME,
+	@updateTime DATETIME2,
 	@errorCode INT OUTPUT
  AS
  BEGIN
@@ -30,7 +30,7 @@
 			f_category = CASE WHEN @category IS NOT NULL THEN @category ELSE f_category END,
 			f_icon = CASE WHEN @icon IS NOT NULL THEN @icon ELSE f_icon END,
 			f_sort = CASE WHEN @sort IS NOT NULL THEN @sort ELSE f_sort END,
-			f_updateTime = GETDATE()
+			f_updateTime = GETUTCDATE()
 		OUTPUT 
 		    CASE 
 				WHEN DELETED.f_imageUrl <> INSERTED.f_imageUrl THEN DELETED.f_imageUrl -- 照片路徑有被更動才回傳舊的路徑

@@ -110,5 +110,13 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_addTicketPlan.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_addPersonalTrainingPackage.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_addMembershipPlan.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getTicketPlan.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getPersonalTrainingPackageEditDataById.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getPersonalTrainingPackage.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getMembershipPlanEditDataById.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getMembershipPlan.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editTicketPlanStatus.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editPersonalTrainingPackage.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editMembershipPlan.sql" />
   </ItemGroup>
 </Project>

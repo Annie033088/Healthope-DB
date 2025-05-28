@@ -1,8 +1,8 @@
-﻿CREATE PROCEDURE pro_healthope_editMember
+﻿CREATE PROCEDURE [dbo].[pro_healthope_editMember]
  @memberId INT, 
  @status BIT, 
  @phone INT,
- @updateTime DATETIME,
+ @updateTime DATETIME2,
  @errorCode INT OUTPUT
  AS
  BEGIN
@@ -20,7 +20,7 @@
 		SET
 			f_phone = CASE WHEN @phone IS NOT NULL THEN @phone ELSE f_phone END,
 			f_status = CASE WHEN @status IS NOT NULL THEN @status ELSE f_status END,
-			f_updateTime = GETDATE()
+			f_updateTime = GETUTCDATE()
 		WHERE f_memberId = @memberId
 		SET @errorCode = @success
 	END

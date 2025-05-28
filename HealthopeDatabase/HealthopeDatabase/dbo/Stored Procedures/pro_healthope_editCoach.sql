@@ -10,7 +10,7 @@
 	@certification NVARCHAR(200), 
 	@photoUrl NVARCHAR(100),
 	@status BIT,
-	@updateTime DATETIME,
+	@updateTime DATETIME2,
 	@errorCode INT OUTPUT
  AS
  BEGIN
@@ -36,7 +36,7 @@
 			f_photoUrl = CASE WHEN @photoUrl IS NOT NULL THEN @photoUrl ELSE f_photoUrl END,
 			f_phone = CASE WHEN @phone IS NOT NULL THEN @phone ELSE f_phone END,
 			f_status =  CASE WHEN @status IS NOT NULL THEN @status ELSE f_status END,
-			f_updateTime = GETDATE()
+			f_updateTime = GETUTCDATE()
 		OUTPUT 
 		    CASE 
 				WHEN DELETED.f_photoUrl <> INSERTED.f_photoUrl THEN DELETED.f_photoUrl -- 照片路徑有被更動才回傳舊的路徑

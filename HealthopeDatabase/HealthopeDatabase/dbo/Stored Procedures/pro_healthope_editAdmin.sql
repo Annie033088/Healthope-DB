@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE pro_healthope_editAdmin
+﻿CREATE PROCEDURE [dbo].[pro_healthope_editAdmin]
  @adminId INT, 
  @status BIT, 
  @identity TINYINT,
@@ -11,7 +11,7 @@
 		SET
 			f_identity = CASE WHEN @identity IS NOT NULL THEN @identity ELSE f_identity END,
 			f_status = CASE WHEN @status IS NOT NULL THEN @status ELSE f_status END,
-			f_updateTime = GETDATE()
+			f_updateTime = GETUTCDATE()
 		WHERE f_adminId = @adminId
 	END
  END
