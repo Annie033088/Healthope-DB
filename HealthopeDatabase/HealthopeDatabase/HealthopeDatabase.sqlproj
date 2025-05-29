@@ -118,5 +118,9 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_editTicketPlanStatus.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_editPersonalTrainingPackage.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_editMembershipPlan.sql" />
+    <Build Include="dbo\Tables\t_term.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getTerm.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getOldTerm.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_addTerm.sql" />
   </ItemGroup>
 </Project>
