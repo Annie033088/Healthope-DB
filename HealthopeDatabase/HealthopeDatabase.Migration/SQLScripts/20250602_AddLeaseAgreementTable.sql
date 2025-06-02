@@ -1,0 +1,11 @@
+CREATE TABLE t_leaseAgreement(
+	f_leaseAgreementId	INT IDENTITY,
+	f_startTime	DATE NOT NULL,
+	f_endTime	DATE NOT NULL,
+	f_remind	BIT NOT NULL DEFAULT 0,
+	f_remark	NVARCHAR(50) NOT NULL DEFAULT '', 
+	f_status	TINYINT NOT NULL DEFAULT 1,
+	f_reminderLeadTime	INT NOT NULL,
+	f_createTime	DATETIME2(3) NOT NULL DEFAULT SYSUTCDATETIME(),
+	f_updateTime	DATETIME2(3) NOT NULL DEFAULT SYSUTCDATETIME()
+)
