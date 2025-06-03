@@ -128,5 +128,7 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_editTermStatus.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_editTerm.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_delTerm.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getLeaseAgreement.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_addLeaseAgreement.sql" />
   </ItemGroup>
 </Project>
