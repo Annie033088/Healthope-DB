@@ -65,6 +65,8 @@
     <Folder Include="dbo\Stored Procedures\" />
     <Folder Include="dbo\Functions\" />
     <Folder Include="Snapshots" />
+    <Folder Include="HangFire\" />
+    <Folder Include="HangFire\Tables\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\t_admin.sql" />
@@ -130,5 +132,20 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_delTerm.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_getLeaseAgreement.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_addLeaseAgreement.sql" />
+    <Build Include="HangFire\Tables\AggregatedCounter.sql" />
+    <Build Include="HangFire\Tables\Hash.sql" />
+    <Build Include="HangFire\Tables\Counter.sql" />
+    <Build Include="HangFire\Tables\Set.sql" />
+    <Build Include="HangFire\Tables\List.sql" />
+    <Build Include="HangFire\Tables\Server.sql" />
+    <Build Include="HangFire\Tables\JobQueue.sql" />
+    <Build Include="HangFire\Tables\JobParameter.sql" />
+    <Build Include="HangFire\Tables\State.sql" />
+    <Build Include="HangFire\Tables\Job.sql" />
+    <Build Include="HangFire\Tables\Schema.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editLeaseAgreementStatus.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editLeaseAgreementRemind.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_delLeaseAgreement.sql" />
+    <Build Include="Security\HangFire.sql" />
   </ItemGroup>
 </Project>
