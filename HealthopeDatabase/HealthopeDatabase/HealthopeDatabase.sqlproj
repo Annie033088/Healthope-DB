@@ -147,5 +147,8 @@
     <Build Include="dbo\Stored Procedures\pro_healthope_editLeaseAgreementRemind.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_delLeaseAgreement.sql" />
     <Build Include="Security\HangFire.sql" />
+    <Build Include="dbo\Tables\t_invoiceTrackNumber.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getInvoiceTrackNumber.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_addInoviceTrackNumber.sql" />
   </ItemGroup>
 </Project>

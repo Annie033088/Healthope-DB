@@ -1,0 +1,2 @@
+ALTER TABLE t_invoiceTrackNumber
+ADD Status TINYINT NOT NULL DEFAULT 1;
