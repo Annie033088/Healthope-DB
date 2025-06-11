@@ -150,5 +150,16 @@
     <Build Include="dbo\Tables\t_invoiceTrackNumber.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_getInvoiceTrackNumber.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_addInoviceTrackNumber.sql" />
+    <Build Include="dbo\Tables\t_orderState.sql" />
+    <Build Include="dbo\Tables\t_order.sql" />
+    <Build Include="dbo\Tables\t_electronicInvoice.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getMemberByNameOrPhone.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getAllTypePlan.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editInvoiceTrackNumberStatus.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_delInoviceTrackNumber.sql" />
+    <Build Include="dbo\Tables\t_singleEntryPass.sql" />
+    <Build Include="dbo\Tables\t_memberPersonalTrainingPackage.sql" />
+    <Build Include="dbo\Tables\t_memberMembershipPlan.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getPersonalCoach.sql" />
   </ItemGroup>
 </Project>

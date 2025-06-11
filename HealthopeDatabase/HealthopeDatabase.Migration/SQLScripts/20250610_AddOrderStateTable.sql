@@ -1,0 +1,9 @@
+CREATE TABLE t_orderState(
+	f_orderStateId	INT IDENTITY,
+	f_orderId	INT NOT NULL,
+	f_state	TINYINT NOT NULL,
+	f_remark	NVARCHAR(50) NOT NULL,
+	f_createTime	DATETIME2(3) NOT NULL DEFAULT SYSUTCDATETIME(),
+	f_updateTime	DATETIME2(3) NOT NULL DEFAULT SYSUTCDATETIME(),
+    FOREIGN KEY (f_orderId) REFERENCES t_order(f_orderId)
+)

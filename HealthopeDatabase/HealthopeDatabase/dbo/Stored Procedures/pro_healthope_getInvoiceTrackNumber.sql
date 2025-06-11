@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE pro_healthope_getInvoiceTrackNumber
+﻿CREATE PROCEDURE [dbo].[pro_healthope_getInvoiceTrackNumber]
 	@status TINYINT, 
 	@time BIT,
 	@recordPerPage TINYINT,
@@ -14,12 +14,12 @@ BEGIN
 	INTO #tempInvoiceTrackNumberTable
     FROM t_invoiceTrackNumber WITH(NOLOCK)
     WHERE (@status IS NULL OR f_status = @status)
-      AND (@time IS NULL OR -- time: 1 代表過去期數, 0 代表未來期數, 時間以西元計算
+      AND (@time IS NULL OR -- time: 0 代表過去期數, 1 代表未來期數, 時間以西元計算
 	(
-	  @time = 1 AND GETDATE() <= DATEFROMPARTS((f_invoicePeriod / 10) + 1911, ((f_invoicePeriod % 10 - 1) * 2 + 1), 1)
+	  @time = 1 AND GETDATE() < EOMONTH(DATEFROMPARTS((f_invoicePeriod / 10) + 1911, ((f_invoicePeriod % 10) * 2), 1))
 	) OR
 	(
-	  @time = 0 AND GETDATE() > DATEFROMPARTS((f_invoicePeriod / 10) + 1911, ((f_invoicePeriod % 10 - 1) * 2 + 1), 1)
+	  @time = 0 AND GETDATE() >= EOMONTH(DATEFROMPARTS((f_invoicePeriod / 10) + 1911, ((f_invoicePeriod % 10) * 2), 1))
 	))
 
 	SELECT @totalRecord = COUNT(*) FROM #tempInvoiceTrackNumberTable WITH(NOLOCK); 
