@@ -1,0 +1,12 @@
+CREATE TABLE t_creditCardTransaction(
+	f_creditCardTransactionId	INT NOT NULL IDENTITY,
+	f_orderId	INT NOT NULL,
+	f_authCode	CHAR(6) NOT NULL DEFAULT '',
+	f_cardLastFour	CHAR(4) NOT NULL DEFAULT '',
+	f_cardType	VARCHAR(30) NOT NULL DEFAULT '',
+	f_transactionId	CHAR(36) NOT NULL DEFAULT '',
+	f_amount	INT NOT NULL,
+	f_status	TINYINT NOT NULL DEFAULT 1,
+	f_createTime	DATETIME2(3) NOT NULL DEFAULT SYSUTCDATETIME(),
+	f_updateTime	DATETIME2(3) NOT NULL DEFAULT SYSUTCDATETIME()
+)

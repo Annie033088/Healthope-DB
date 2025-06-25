@@ -1,5 +1,5 @@
 -- DbUp SchemaVersions Backup
--- Generated on: 2025/6/11 下午 02:39:50
+-- Generated on: 2025/6/25 下午 05:57:48
 
 INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250418_editAdminTable.sql', '2025-04-18 15:52:21');
 INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250418_addMemberTable.sql', '2025-04-18 17:13:31');
@@ -37,3 +37,6 @@ INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250610_AddOrderState
 INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250611_AddMemberMembershipPlanTable.sql', '2025-06-11 14:39:50');
 INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250611_AddSingleEntryPassTable.sql', '2025-06-11 14:39:50');
 INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250611_AddmemberPersonalTrainingPackageTable.sql', '2025-06-11 14:39:50');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250618_addCreditCardTransactionTable.sql', '2025-06-18 14:32:28');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250625_addMemberPersonalClassTable.sql', '2025-06-25 17:21:47');
+INSERT INTO SchemaVersions (ScriptName, Applied) VALUES ('20250625_addRefundAndPenaltyTable.sql', '2025-06-25 17:57:48');

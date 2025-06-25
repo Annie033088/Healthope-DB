@@ -11,7 +11,7 @@
 		SET
 			f_identity = CASE WHEN @identity IS NOT NULL THEN @identity ELSE f_identity END,
 			f_status = CASE WHEN @status IS NOT NULL THEN @status ELSE f_status END,
-			f_updateTime = GETUTCDATE()
+			f_updateTime = SYSUTCDATETIME()
 		WHERE f_adminId = @adminId
 	END
  END

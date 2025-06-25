@@ -36,7 +36,7 @@
 			f_photoUrl = CASE WHEN @photoUrl IS NOT NULL THEN @photoUrl ELSE f_photoUrl END,
 			f_phone = CASE WHEN @phone IS NOT NULL THEN @phone ELSE f_phone END,
 			f_status =  CASE WHEN @status IS NOT NULL THEN @status ELSE f_status END,
-			f_updateTime = GETUTCDATE()
+			f_updateTime = SYSUTCDATETIME()
 		OUTPUT 
 		    CASE 
 				WHEN DELETED.f_photoUrl <> INSERTED.f_photoUrl THEN DELETED.f_photoUrl -- 照片路徑有被更動才回傳舊的路徑

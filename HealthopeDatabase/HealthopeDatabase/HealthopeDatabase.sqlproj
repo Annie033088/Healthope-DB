@@ -161,5 +161,24 @@
     <Build Include="dbo\Tables\t_memberPersonalTrainingPackage.sql" />
     <Build Include="dbo\Tables\t_memberMembershipPlan.sql" />
     <Build Include="dbo\Stored Procedures\pro_healthope_getPersonalCoach.sql" />
+    <Build Include="dbo\Tables\t_creditCardTransaction.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getOrder.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editOrderStatusAndPayByCash.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editElectronicInvoiceStatus.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_addOrder.sql" />
+    <Build Include="dbo\Tables\t_memberPersonalClass.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_getOrderDetailById.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editSingleEntryPassStatusExit.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editSingleEntryPassStatusEntry.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editOrderStatusPayByCardSuccess.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editOrderStateRemark.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editOrderStateCancelPendingOrder.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editOrderStateAndGetInvoiceNumber.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editOrderRemark.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editCreditCardTransactionStatusSuccess.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_editCreditCardTransactionStatusFail.sql" />
+    <Build Include="dbo\Stored Procedures\pro_healthope_addCreditCardTransaction.sql" />
+    <Build Include="dbo\Tables\t_refund.sql" />
+    <Build Include="dbo\Tables\t_penalty.sql" />
   </ItemGroup>
 </Project>
